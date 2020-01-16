@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>填写请假单</h1>
+<form action="doFill" method="post">
+    <input type="hidden" name="pid" value="${pid}"/>
+    <div>
+        开始: <input type="date" name="start"/>
+    </div>
+    <div>
+        结束: <input type="date" name="end"/>
+    </div>
+    <div>
+        原因: <input type="type" name="reason"/>
+    </div>
+    <div>
+        开始: <input type="submit" value="提交"/>
+    </div>
+</form>
+
+</body>
+</html>

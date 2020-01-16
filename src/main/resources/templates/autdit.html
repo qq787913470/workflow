@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>审批</h1>
+<form action="doAudit" method="post">
+    <input type="hidden" name="pid" value="${pid}"/>
+    <div>
+        开始: <input type="date" name="start" value="${start}" readonly/>
+    </div>
+    <div>
+        结束: <input type="date" name="end" value="${end}" readonly/>
+    </div>
+    <div>
+        原因: <input type="text" name="reason" value="${reason}" readonly/>
+    </div>
+    <div>
+        审批意见: <input type="text" name="advice" />
+    </div>
+    <div>
+        <input type="submit" value="同意"/><input type="submit" value="不同意"/>
+    </div>
+</form>
+
+</body>
+</html>
